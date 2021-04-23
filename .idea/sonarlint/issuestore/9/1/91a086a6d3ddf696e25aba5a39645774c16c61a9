@@ -1,0 +1,25 @@
+
+]	java:S110"<This class has 9 parents which is greater than 5 authorized.(∑°Ôı¯ˇˇˇˇ8•ÒÚúé/
+E
+java:S1659 "*Declare "nuevoUsuario" on a separate line.(ÄÀ∞∏¸ˇˇˇˇ
+>
+java:S1604N"(Make this anonymous inner class a lambda(“àÚé
+I
+java:S1659*".Declare "passwordEditText" on a separate line.(›ö¸¬˛ˇˇˇˇ
+H
+java:S1128"-Remove this unused import 'org.w3c.dom.Text'.(∂ƒËã˛ˇˇˇˇ
+ó
+java:S1186_"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(⁄∫Ç
+>
+java:S1604E"(Make this anonymous inner class a lambda(ã≈”Ô
+m
+java:S1128"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(ëœ¶‚
+]	java:S125Y"<This block of commented-out lines of code should be removed.(≠ü§¥˛ˇˇˇˇ8⁄∑Ûúé/
+C
+java:S1604<"(Make this anonymous inner class a lambda(ŸÄûÙ˝ˇˇˇˇ
+K
+java:S1604Ç"(Make this anonymous inner class a lambda(•ÌÓüˇˇˇˇˇ8•ÒÚúé/
+L
+java:S1659""1Declare "contrasenaTextField" on a separate line.(í¶•íˇˇˇˇˇ
+G
+java:S1659 ",Declare "continuarLabel" on a separate line.(ÄÀ∞∏¸ˇˇˇˇ

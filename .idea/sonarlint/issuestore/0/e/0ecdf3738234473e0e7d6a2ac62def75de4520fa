@@ -1,0 +1,17 @@
+
+P	java:S110"<This class has 9 parents which is greater than 5 authorized.(ÆˆøP
+q
+java:S1450"TRemove the "fAuth" field and declare it as a local variable in the relevant methods.(’‘ÿù8¦À¿É/
+P
+java:S1659".Declare "passwordEditText" on a separate line.(ìÙËßşÿÿÿÿ8Ù¢ Ç/
+r	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îŞ‚‡ûÿÿÿÿ8ËÕ½Ë/
+R
+java:S1068"0Remove this unused "inicioSesion" private field.(óİÖÎøÿÿÿÿ8˜Ä¡Ç/
+u
+java:S1450"XRemove the "mDatabase" field and declare it as a local variable in the relevant methods.(àıˆ8…ÖÉ/
+w
+java:S1450"URemove the "userID" field and declare it as a local variable in the relevant methods.(³ ûÁÿÿÿÿÿ8«¿ÀÉ/
+
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô°¤¦8ÉöÉÊ/
+M
+java:S1659"+Declare "emailEditText" on a separate line.(ìÙËßşÿÿÿÿ8Ù¢ Ç/
