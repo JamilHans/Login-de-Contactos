@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -21,7 +22,7 @@ import java.util.Map;
 
 public class AgregarContactos extends AppCompatActivity {
 
-    private EditText editTextNombres,editTextCelular;
+    private TextInputEditText editTextNombres,editTextCelular;
     private Button buttonAgregarContactos;
     /*BD*/
     FirebaseAuth fAuth;
@@ -32,8 +33,8 @@ public class AgregarContactos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_contactos);
-        editTextNombres = (EditText) findViewById(R.id.etNombre);
-        editTextCelular = (EditText) findViewById(R.id.etCelular);
+        editTextNombres = (TextInputEditText) findViewById(R.id.etNombre);
+        editTextCelular = (TextInputEditText) findViewById(R.id.etCelular);
         buttonAgregarContactos = (Button)findViewById(R.id.btnAgregarContactos);
         //Configuracion de la BD
         fAuth = FirebaseAuth.getInstance();
