@@ -44,14 +44,19 @@ public class AgregarContactos extends AppCompatActivity {
         buttonAgregarContactos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String nombre = editTextNombres.getText().toString().trim();
                 String celular = editTextCelular.getText().toString().trim();
-
-                Map<String, Object> personaMap = new HashMap<>();
-                personaMap.put("Nombre", nombre);
-                personaMap.put("Numero", celular);
-                mDatabase.child("Contacto").child(userID).child("Amigos").push().setValue(personaMap);
-                limpiarDatos();
+                if(celular.isEmpty() || celular.length() != 9) {
+                    Toast.makeText(AgregarContactos.this, "Numero de celular incompleto", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Map<String, Object> personaMap = new HashMap<>();
+                    personaMap.put("Nombre", nombre);
+                    personaMap.put("Numero", celular);
+                    mDatabase.child("Contacto").child(userID).child("Amigos").push().setValue(personaMap);
+                    limpiarDatos();
+                }
             }
         });
 
