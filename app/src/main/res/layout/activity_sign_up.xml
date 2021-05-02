@@ -9,28 +9,30 @@
     tools:context=".SignUpActivity">
     <ImageView
         android:id="@+id/signUpImageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/ic_baseline_login_24"
         android:transitionName="logoImageTrans"
-        android:layout_gravity="left"/>
+        android:layout_gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/bienvenidoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
+        android:text="Registrate"
         android:layout_marginTop="28dp"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
         android:transitionName="textTrans"/>
 
     <TextView
         android:id="@+id/continuarLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrate para empezar a usar Codelia"
+        android:text="Completa el formulario"
         android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
         android:transitionName="iniciaSesionTextTrans"/>
     
     <LinearLayout

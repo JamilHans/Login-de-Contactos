@@ -73,23 +73,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        //
-        signInButton = findViewById(R.id.loginGoogle);
-        signInButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                signInWithGoogle();
-            }
-        });
-/*
-        GoogleSignInOptions gso = new GoogleSignInOptions().Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.web_client_id))
-                .requestEmail()
-                .build();
-        mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
-*/
-        
     }
 
     private void signInWithGoogle() {

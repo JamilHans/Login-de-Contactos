@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/signUpImageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/ic_baseline_login_24"
         android:transitionName="logoImageTrans"
         android:layout_gravity="center"/>
@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nameTextField"
         android:hint="Nombre completo"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -54,6 +55,7 @@
         android:id="@+id/emailTextField"
         android:hint="Email"
         android:transitionName="emailInputTextTrans"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEditText"
@@ -70,6 +72,7 @@
         android:hint="Contraseña"
         android:transitionName="passwordInputTextTrans"
         app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
