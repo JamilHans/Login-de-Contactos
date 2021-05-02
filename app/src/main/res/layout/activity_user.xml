@@ -6,6 +6,31 @@
     android:layout_height="match_parent"
     android:background="@color/rosado"
     tools:context=".UserActivity">
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    <!--
     <TextView
         android:id="@+id/title_view"
         android:layout_width="wrap_content"
@@ -15,7 +40,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#fff"/>
-
+-->
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
