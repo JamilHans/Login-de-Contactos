@@ -1,7 +1,9 @@
 package com.example.login;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,10 +32,27 @@ public class UserActivity extends AppCompatActivity {
         BotonSalida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserActivity.this, "Boton salida", Toast.LENGTH_LONG).show();
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent (UserActivity.this, MainActivity.class));
-                finish();
+                AlertDialog.Builder builder = new AlertDialog.Builder(UserActivity.this);
+                builder.setTitle("Titulo");
+                builder.setMessage("Quieres cerrar sesion?")
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(getApplicationContext(),"Cerrando Sesion",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(UserActivity.this, "Boton salida", Toast.LENGTH_LONG).show();
+                                FirebaseAuth.getInstance().signOut();
+                                startActivity(new Intent (UserActivity.this, MainActivity.class));
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(getApplicationContext(), "Cancel...",Toast.LENGTH_SHORT).show();
+                                dialog.dismiss();
+                            }
+                        }).show();
+
             }
         });
 

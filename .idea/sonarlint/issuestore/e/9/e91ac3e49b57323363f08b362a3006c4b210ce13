@@ -1,0 +1,18 @@
+
+E
+java:S1604,"(Make this anonymous inner class a lambda(¥®åş8 İğ•/
+U
+java:S1128"8Remove this unused import 'androidx.annotation.NonNull'.(ˆÛúÜ8ÁË‘ƒ/
+O
+java:S1128"3Remove this unused import 'android.content.Intent'.(³ğ‹G8Î¥¸ñ/
+n
+java:S1128"LRemove this unused import 'com.google.android.gms.tasks.OnCompleteListener'.(Çğ¸Òÿÿÿÿÿ8ÁË‘ƒ/
+[
+java:S1128">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8ÁË‘ƒ/
+Q
+java:S1128
+"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8îƒ”/
+‚
+java:S1450"eRemove the "buttonAgregarContactos" field and declare it as a local variable in the relevant methods.(´ÂŠ8¤”š/
+J
+java:S1659"-Declare "editTextCelular" on a separate line.(÷Îæ8öÿ™/
