@@ -3,10 +3,8 @@ package com.example.login;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -17,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MiPerfil extends AppCompatActivity {
+public class EditActivity extends AppCompatActivity {
     private TextInputEditText nombreEditText, emailEditText, passwordEditText;
     private MaterialButton BtEditar;
     //BD Authe
@@ -30,7 +28,7 @@ public class MiPerfil extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mi_perfil);
+        setContentView(R.layout.activity_edit);
         nombreEditText = (TextInputEditText)findViewById(R.id.nombreEditText);
         emailEditText = (TextInputEditText)findViewById(R.id.emailEditText);
         passwordEditText = (TextInputEditText)findViewById(R.id.passwordEditText);
@@ -67,11 +65,17 @@ public class MiPerfil extends AppCompatActivity {
         BtEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MiPerfil.this,EditActivity.class);
-                startActivity(intent);
+                recibirDatos();
             }
         });
+    }
 
+    private void actualizarDatos() {
 
+    }
+
+    private void recibirDatos() {
+        String nombreRecibido = nombreEditText.getText().toString().trim();
+        mDatabase.child(userID).child("nombre").setValue(nombreRecibido);
     }
 }

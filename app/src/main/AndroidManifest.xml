@@ -8,10 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.Login">
-
-        <activity android:name=".VerContactos"></activity>
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".VerContactos" />
         <activity android:name=".AgregarContactos" />
         <activity android:name=".MiPerfil" />
         <activity android:name=".UserActivity" />
