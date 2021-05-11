@@ -1,8 +1,8 @@
 package com.example.login;
 
 public class User {
-    String Nombre;
-    String Numero;
+    private String Nombre;
+    private String Numero;
 
     public User(String Nombre, String Numero) {
         this.Nombre = Nombre;
